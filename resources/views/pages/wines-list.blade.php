@@ -9,7 +9,6 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
                         <th scope="col">Name</th>
                         <th scope="col">Type</th>
                         <th scope="col">Price</th>
@@ -21,7 +20,6 @@
                 <tbody>
                     @foreach ($wines as $wine)
                     <tr>
-                        <th scope="row">{{ $wine->id }}</th>
                         <td>{{ $wine->name }}</td>
                         <td>{{ $wine->type }}</td>
                         <td>{{ $wine->price }}</td>

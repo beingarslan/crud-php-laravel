@@ -46,7 +46,8 @@ class WineController extends Controller
 
     public function index()
     {
-        $wines = Wine::all();
+        // show all wines order by recently added
+        $wines = Wine::orderBy('created_at', 'desc')->get();
         return view('pages/wines-list', compact('wines'));
     }
 }

@@ -14,17 +14,15 @@
         <a class="navbar-brand" href="#">AusWine</a>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link active" href="/">Home</a>
             </li>
+
             <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="modal" data-target="#form">Registation</a
-          >
-        </li>
+                <a class="nav-link" href="/creat/wine">Add wines</a>
+            </li>
         <li class="nav-item">
-          <a class="nav-link" href="wines.php">Wines</a>
+          <a class="nav-link" href="/wines-list">Wines List</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Details.html">Details</a>
-            </li>
+          
         </ul>
     </nav>

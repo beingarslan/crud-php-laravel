@@ -19,10 +19,9 @@ Route::get('/', function () {
 Route::get('/creat/wine', function () {
     return view('pages/create-wine');
 });
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/store', [App\Http\Controllers\WineController::class, 'store'])->name('store');
+Route::get('/wines-list', [App\Http\Controllers\WineController::class, 'index'])->name('wines-list');
+Route::get('/edit/{id}', [App\Http\Controllers\WineController::class, 'edit'])->name('edit');
+Route::post('/update/{id}', [App\Http\Controllers\WineController::class, 'update'])->name('update');
+Route::get('/delete/{id}', [App\Http\Controllers\WineController::class, 'delete'])->name('delete');
